@@ -1,0 +1,29 @@
+PODS:
+  - MMFrameworks/APIEncryption (2.3.68):
+    - MMFrameworks/MomoCrypto
+  - MMFrameworks/Frameworks (2.3.68)
+  - MMFrameworks/MMFoundation (2.3.68)
+  - MMFrameworks/MomoCrypto (2.3.68):
+    - MMFrameworks/Frameworks
+    - MMFrameworks/MMFoundation
+  - PhotonPushSDK (0.0.4)
+
+DEPENDENCIES:
+  - MMFrameworks/APIEncryption (= 2.3.68)
+  - MMFrameworks/MMFoundation (= 2.3.68)
+  - MMFrameworks/MomoCrypto (= 2.3.68)
+  - PhotonPushSDK (= 0.0.4)
+
+SPEC REPOS:
+  https://git.wemomo.com/ios/Specs.git:
+    - MMFrameworks
+  https://github.com/cocoapods/specs.git:
+    - PhotonPushSDK
+
+SPEC CHECKSUMS:
+  MMFrameworks: ac3a69e0aeedea7c5fe0853e05c0186b51e16731
+  PhotonPushSDK: 6ca7d87bc4b2709442a9b9b1337a9970bc407a80
+
+PODFILE CHECKSUM: dced89d4764fe7a5661001f096ea831f3c4233b9
+
+COCOAPODS: 1.5.3

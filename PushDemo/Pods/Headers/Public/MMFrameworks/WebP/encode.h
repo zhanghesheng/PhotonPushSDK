@@ -1,0 +1,1 @@
+../../../../MMFrameworks/Products/Frameworks/WebP.framework/Headers/encode.h

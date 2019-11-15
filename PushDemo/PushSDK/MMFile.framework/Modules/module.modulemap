@@ -1,0 +1,6 @@
+framework module MMFile {
+  umbrella header "MMFile.h"
+
+  export *
+  module * { export * }
+}

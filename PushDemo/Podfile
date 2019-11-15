@@ -1,0 +1,11 @@
+source 'https://github.com/CocoaPods/Specs.git'
+source 'https://git.wemomo.com/ios/Specs.git'
+platform :ios, '10.0'
+project 'PushDemo'
+target :PushDemo do
+    pod 'PhotonPushSDK','0.0.4'
+    pod 'MMFrameworks/MMFoundation', '2.3.68'
+    pod 'MMFrameworks/MomoCrypto', '2.3.68'
+    pod 'MMFrameworks/APIEncryption', '2.3.68'
+#    pod 'PhotonPushSDK',:path=>'../../../github_project/PhotonPushSDK-iOS/'
+end

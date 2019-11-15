@@ -1,0 +1,10 @@
+FRAMEWORK_SEARCH_PATHS = $(inherited) "${PODS_ROOT}/MMFrameworks/Products" "${PODS_ROOT}/MMFrameworks/Products/Frameworks" "${PODS_ROOT}/PhotonPushSDK/Frameworks"
+GCC_PREPROCESSOR_DEFINITIONS = $(inherited) COCOAPODS=1
+HEADER_SEARCH_PATHS = $(inherited) "${PODS_ROOT}/Headers/Public" "${PODS_ROOT}/Headers/Public/MMFrameworks" "${PODS_ROOT}/Headers/Public/PhotonPushSDK"
+OTHER_CFLAGS = $(inherited) -isystem "${PODS_ROOT}/Headers/Public" -isystem "${PODS_ROOT}/Headers/Public/MMFrameworks" -isystem "${PODS_ROOT}/Headers/Public/PhotonPushSDK"
+OTHER_LDFLAGS = $(inherited) -ObjC -l"c++" -l"resolv" -l"stdc++" -l"z" -framework "APIEncryption" -framework "CoreTelephony" -framework "Foundation" -framework "MMFoundation" -framework "MomoCrypto" -framework "WebP" -framework "openssl" -framework "pushsdk"
+PODS_BUILD_DIR = ${BUILD_DIR}
+PODS_CONFIGURATION_BUILD_DIR = ${PODS_BUILD_DIR}/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)
+PODS_PODFILE_DIR_PATH = ${SRCROOT}/.
+PODS_ROOT = ${SRCROOT}/Pods
+VALID_ARCHS = armv7 i386 arm64 x86_64
