@@ -20,6 +20,11 @@ typedef NS_ENUM(NSInteger,MOBuildStat) {
     MOBuildStat_INHOUSE = 1,
     MOBuildStat_RELEASE = 2,
 };
+typedef NS_ENUM(NSInteger,MOPushServerType) {
+    MOPushServerTypeInland = 0,
+    MOPushServerTypeOverseas= 1,
+};
+
 
 
 @interface MoPushManager : NSObject
@@ -29,6 +34,8 @@ typedef NS_ENUM(NSInteger,MOBuildStat) {
 @property (nonatomic,strong) CallbackMessage *callbackMessage;
 @property (nonatomic, strong, readonly) dispatch_queue_t queue;
 @property (nonatomic, assign)NSInteger  insLog;
+
++ (void)setServerType:(MOPushServerType)serverType;
 /**
  初始化push sdk
  @paramter appID 在服务端申请获得的id
@@ -129,8 +136,6 @@ typedef NS_ENUM(NSInteger,MOBuildStat) {
 + (void) onCommand:(int) command name:(NSString *)name  code: (int) code message:(NSString *) message;
 
 + (BOOL)isReachable;
-
-+ (NSString *)netName;
 
 
 + (dispatch_queue_t)getPushQueue;
