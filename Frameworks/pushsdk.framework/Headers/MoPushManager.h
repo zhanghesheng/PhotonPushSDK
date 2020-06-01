@@ -7,6 +7,7 @@
 //
 
 #import <Foundation/Foundation.h>
+#import <UIKit/UIKit.h>
 #import "CallbackMessage.h"
 #import <UserNotifications/UserNotifications.h>
 
@@ -37,7 +38,7 @@ API_AVAILABLE(ios(10.0))
 
 + (void)setServerType:(MOPushServerType)serverType;
 
-+ (void)setNotiCenterDelegate:(id<UNUserNotificationCenterDelegate>)delegate;
++ (void)setNotiCenterDelegate:(id<UNUserNotificationCenterDelegate,UIApplicationDelegate>)delegate;
 /**
  初始化push sdk
  @paramter appID 在服务端申请获得的id

@@ -13,6 +13,7 @@ Pod::Spec.new do |s|
   s.framework = 'SystemConfiguration'
   s.framework = 'CoreTelephony'
   s.framework = 'UserNotifications'
+  s.framework = 'UIKit'
   s.vendored_frameworks = 'Frameworks/pushsdk.framework'
   s.resources = 'Frameworks/pushBudle.bundle'
   s.libraries = 'stdc++','z','c++'
