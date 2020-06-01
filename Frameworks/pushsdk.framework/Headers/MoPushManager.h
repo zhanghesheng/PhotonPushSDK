@@ -35,10 +35,11 @@ API_AVAILABLE(ios(10.0))
 @property (nonatomic,strong) CallbackMessage *callbackMessage;
 @property (nonatomic, strong, readonly) dispatch_queue_t queue;
 @property (nonatomic, assign)NSInteger  insLog;
+@property (nonatomic, strong,readonly)id<UNUserNotificationCenterDelegate,UIApplicationDelegate> centerDelegate;
 
 + (void)setServerType:(MOPushServerType)serverType;
 
-+ (void)setNotiCenterDelegate:(id<UNUserNotificationCenterDelegate,UIApplicationDelegate>)delegate;
++ (void)setNotiCenterDelegate:(id<UNUserNotificationCenterDelegate,UIApplicationDelegate> _Nullable)delegate;
 /**
  初始化push sdk
  @paramter appID 在服务端申请获得的id
